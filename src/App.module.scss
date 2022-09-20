@@ -1,0 +1,19 @@
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 400px;
+
+    border-radius: 12px;
+    padding: 20px;
+
+
+    background-image: linear-gradient(to top, #72efee,#6efae6);
+    
+    box-shadow: 0 25px 40px  #499b9c;
+
+    overflow:hidden;
+    
+}

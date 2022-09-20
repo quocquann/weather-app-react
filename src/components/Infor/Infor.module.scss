@@ -1,0 +1,116 @@
+
+.wrapper{
+    
+    padding-top: 20px;
+
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .notify{
+        min-height: 20px;
+        color: red;
+    }
+
+    .main-infor{
+
+        padding: 50px;
+
+        animation: slide-in .3s linear 0s;
+        min-height: 370px;
+
+        .location{
+            font-size: 35px;
+            font-weight: bold;
+
+            min-height: 90px;
+        
+            color: var(--text-color);
+        }
+
+       
+
+        
+        .temperature{
+            font-size: 40px;
+            color: var(--text-color);
+
+            &::after{
+                content: " oC";
+                vertical-align: super;
+                font-size: 20px;
+            }
+        }
+        
+        .desc{
+            color: var(--text-color);
+        }
+    
+    }
+    
+
+    
+    .more-infor{
+        display: flex;
+        justify-content: space-between;
+        min-height: 96px;
+
+        .item{
+            background-color: rgba(255, 255, 255,0.3);
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-basis: 30%;
+            gap:10px;
+        
+            padding: 10px;
+            border-radius: 4px;
+
+            color:#5ca4ad;
+
+          
+
+            .icon{
+                color: #fff;
+            }
+        }
+    }
+
+    .more-infor{
+        .eye{
+            animation: fly-in .3s linear 0s;
+        }
+
+        .wind{
+            animation: fly-in .3s linear .1s;
+        }
+
+        .droplet{
+            animation: fly-in .3s linear .2s;
+        }
+    }
+}
+
+@keyframes fly-in {
+    0% {
+        transform: translateY(calc(100% + 20px));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(calc(100% + 20px));
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
